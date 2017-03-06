@@ -28,9 +28,9 @@ The moves are defined as in standard rubiks algorithms.
 * `doalgo` followed by the name of an already-imported algorithm.
 * `reset` will refresh the cube to its initial state
 * `set <name> = <val>` to set one of the following option :
-** `interactive = true/false`. Will make algorithm pause during the process, so you can do moves on you're own cube.
-** `coloredOutput = true/false`. Will display colors instead of numbers.
-** `verbose = 2/1/0`. Will respectively display moves and cube, only cube, or nothing.
+ * `interactive = true/false`. Will make algorithm pause during the process, so you can do moves on you're own cube.
+ * `coloredOutput = true/false`. Will display colors instead of numbers.
+ * `verbose = 2/1/0`. Will respectively display moves and cube, only cube, or nothing.
 * `randomize` to generate a random cube. If not followed by `silent`, it will display the move sequence so you can reproduce it on your own cube.
 
 ## Algorithm language
