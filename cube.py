@@ -1,7 +1,5 @@
-import colorama
 from algorithm import Algorithm
-
-colorama.init()
+import colorama
 
 class Cube:
 	def __init__(self):
@@ -404,32 +402,3 @@ class Cube:
 		if self.faces[f][i] == 3: print(colorama.Back.YELLOW, "  ", colorama.Back.RESET, sep='', end='')
 		if self.faces[f][i] == 4: print(colorama.Back.MAGENTA, "  ", colorama.Back.RESET, sep='', end='')
 		if self.faces[f][i] == 5: print(colorama.Back.RED, "  ", colorama.Back.RESET, sep='', end='')
-			
-			
-c = Cube()
-
-files = ["firstcross", "firstface", "middle", "lastcross", "lastface", "resolve"]
-for s in files:
-	a = Algorithm()
-	a.loadFromFile(s + ".algo")
-	c.addAlgo(s, a)
-	
-# print(c.zDecal("U", 2, 1))
-# print(c.zDecal("M", 0, 1))
-# print(c.zDecal("M", 1, 1))
-# print(c.zDecal("M", 2, 1))
-# print(c.zDecal("M", 3, 1))
-# print(c.zDecal("M", 0, 3))
-# print(c.zDecal("M", 1, 3))
-# print(c.zDecal("M", 2, 3))
-# print(c.zDecal("M", 3, 3))
-
-print("Welcome to Rubick's Cube player ! :)");
-print("Type 'help' to get a list of usable command");
-c.printCube();
-
-inStr = ""
-while inStr != "exit":
-	s = c.eval(inStr)
-	inStr = input(">> ")
-	

@@ -317,11 +317,11 @@ class Algorithm:
 		elif(self.conditionType == Algorithm.UNTIL):
 			m = self.match(cube)
 			j = 0
-			while m < 0 and j <= 10:
+			while m < 0 and j <= 50:
 				if self.doSteps(cube, 0): return True
 				m = self.match(cube)
 				j += 1
-			if j >= 10:
+			if j >= 50:
 				print("Erreur - boucle infinie detectee")
 				return True
 		return False
