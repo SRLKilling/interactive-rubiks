@@ -3,6 +3,10 @@
 This project is an old project I made when I was learning Python.
 It is basically a shell that allows playing with a rubik's cube.
 It is patched with an homemade algorithm language that allows easily creating solving algorithms that adapt to the cube.
+Here is a little demo :
+
+![Demo](https://media.giphy.com/media/srcwknEXv8SOY/giphy.gif)
+
 
 ## Usage
 
@@ -79,7 +83,7 @@ if/match x doing y
 end
 ```
 
-The difference between match and if, is that `match x doing y` will first try matching only the number `x`, and if done, it will then do `y` until the full pattern is matched.
+The difference between match and if, is that `match x doing y` will first try matching only the number `x` doing repetedly action `y`. Each time it happens, we will then check that the whole pattern is matched. This allows syncing different faces. For exemple, if you know how to move a square on the back face to the front face, maybe you'd like to first move the square from the back face so it is at a good position for you to execute your algorithm, and move it to the right front square.
 
 You can also use loops :
 ```
